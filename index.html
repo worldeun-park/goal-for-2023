@@ -13,6 +13,9 @@
             font-family: 'Hahmlet', serif;
         }
 
+        a{
+            /* text-decoration: none; */
+        }
         .title {
             color: white;
             background-color: rgb(27, 92, 255);
@@ -60,42 +63,51 @@
             padding: 8px;
             /* border: 1px solid rgb(27, 92, 255); */
             background-color: rgba(195, 208, 255, 0.4);
-            width: 600px;
+            width: 100%;
             border-radius: 15px;
-            min-height: 600px;
         }
 
         .flex-item {
-            flex: 1 1 30%;
+            flex: 1 1 25%;
             padding: 4px;
             color: rgb(67, 67, 67);
             /* background-color: rgb(188, 207, 255); */
             background-color: white;
             border-radius: 15px;
             margin: 5px;
-            min-height: 200px;
             /* border: 1px solid rgb(27, 92, 255); */
         }
 
-        #self-improvement h4, #competitiveness h4, #economy h4 {
+        #self-improvement h4, #goal4 h4, #goal5 h4 {
             text-align: center;
-            line-height: 130px;
-            font-size: 24px;
+            line-height: 4.5rem;
+            font-size: 0.8em;
         }
 
         .flex-item:nth-child(5) {
-            font-size: 24px;
+            font-size: 1em;
             text-align: center;
-            line-height: 120px;
+            line-height: 4.5rem;
             background-color: rgb(27, 92, 255);
             color: white;
         }
-        
+        .flex-item h4 {
+            font-size: 0.8em;
+            text-align: center;
+        }
+        .flex-item ul {
+            padding-inline-start: 20%;
+        }
+        .flex-item li {
+            font-size: 0.1em;
+            list-style: none;
+        }
+
         .bold {
             font-weight: bold;
         }
         .small-font {
-            font-size: 13px;   
+            font-size: 0.8em;   
         }
     </style>
     <link rel="stylesheet" type="text/css"
@@ -113,20 +125,20 @@
         </header>
         <p>
         <div class="flex-container card">
-            <div class="flex-item"><h4>1 생활습관</h4></div>
-            <div class="flex-item"><h4>2 신체건강</h4></div>
-            <div class="flex-item"><h4>3 기술력</h4></div>
-            <div class="flex-item"><h4>4 경쟁력</h4></div>
-            <div class="flex-item center-item"><h4>자기계발</h4></div>
-            <div class="flex-item"><h4>5 경제력</h4></div>
-            <div class="flex-item"><h4>6 영어</h4></div>
-            <div class="flex-item"><h4>7 문해력</h4></div>
-            <div class="flex-item"><h4>8 외모관리</h4></div>
+            <a id="first-goal1" href="#goal1" class="flex-item"><h4>1 생활습관</h4></a>
+            <a id="first-goal2" href="#goal2" class="flex-item"><h4>2 신체건강</h4></a>
+            <a id="first-goal3" href="#goal3" class="flex-item"><h4>3 기술력</h4></a>
+            <a id="first-goal4" href="#goal4" class="flex-item"><h4>4 경쟁력</h4></a>
+            <a id="first-goal" href="#goal" class="flex-item center-item"><h4>자기계발</h4></a>
+            <a id="first-goal5" href="#goal5" class="flex-item"><h4>5 경제력</h4></a>
+            <a id="first-goal6" href="#goal6" class="flex-item"><h4>6 영어</h4></a>
+            <a id="first-goal7" href="#goal7" class="flex-item"><h4>7 문해력</h4></a>
+            <a id="first-goal8" href="#goal8" class="flex-item"><h4>8 외모관리</h4></a>
         </div>
         </p>
     </article>
 
-    <article>
+    <article id="goal1">
         <header>
             <h2>만다라트</h2>
             <h3>2023년 목표 - 자기계발 -생활습관</h3>
@@ -137,7 +149,7 @@
                 <h4>1 식습관</h4>
                 <p>
                 <ul>
-                    <li>밀가루</li> 튀김 X</li>
+                    <li>밀가루, 튀김 X</li>
                     <li>액상과당 X</li>
                     <li>1회 용품 속 음식 X</li>
                 </ul>
@@ -147,7 +159,7 @@
                 <h4>2 물건 간수</h4>
                 <p>
                 <ul>
-                    <li>이동 시 소지품 확인</li>
+                    <li>이동 시 소지품</li>
                 </ul>
                 </p>
             </div>
@@ -155,7 +167,7 @@
                 <h4>3 이동</h4>
                 <p>
                 <ul>
-                    <li>당일 이동경로 암기</li>
+                    <li>이동경로 암기</li>
                 </ul>
                 </p>
             </div>
@@ -163,18 +175,18 @@
                 <h4>4 주의</h4>
                 <p>
                 <ul>
-                    <li>주변 지형 보고 걷기</li>
+                    <li>주변 지형 주의</li>
                 </ul>
                 </p>
             </div>
-            <div class="flex-item">
+            <a href="#first-goal1" class="flex-item">
                 <h4>1 생활습관</h4>
-            </div>
+            </a>
             <div class="flex-item">
                 <h4>5 체력</h4>
                 <p>
                 <ul>
-                    <li>12,000보 미만 걷기</li>
+                    <li>12,000보 미만</li>
                     <li>23:00 전 귀가</li>
                 </ul>
                 </p>
@@ -183,10 +195,9 @@
                 <h4>6 태도</h4>
                 <p>
                 <ul>
-                    <li>현재에 집중하자</li>
-                    <li>감사하자</li>
+                    <li>현재에 충실</li>
+                    <li>감사</li>
                     <li>타인에게 관심</li>
-                    <li>그럴 수도 있지</li>
                 </ul>
                 </p>
             </div>
@@ -194,8 +205,7 @@
                 <h4>7 기억</h4>
                 <p>
                 <ul>
-                    <li>질문과 대답 상기</li>
-                    <li>진심으로 궁금해하기</li>
+                    <li>질문 대답 상기</li>
                     <li>메모하기</li>
                 </ul>
                 </p>
@@ -212,7 +222,7 @@
         </p>
     </article>
 
-    <article>
+    <article id="goal2">
         <header>
             <h2>만다라트</h2>
             <h3>2023년 목표 - 자기계발 - 신체건강</h3>
@@ -223,10 +233,7 @@
                 <h4>1 검도</h4>
                 <p>
                 <ul>
-                    <li>주 3회 도장 방문</li>
-                    <li>배운 내용 기록</li>
-                    <li>해동 검도 동작 암기</li>
-                    <li>해동 검도 영상 시청</li>
+                    <li>주 3회</li>
                 </ul>
                 </p>
             </div>
@@ -235,9 +242,6 @@
                 <p>
                 <ul>
                     <li>100개</li>
-                    <li>매달 10개씩 늘리기</li>
-                    <li>1월: 10개</li>
-                    <li>10월: 100개</li>
                 </ul>
                 </p>
             </div>
@@ -246,9 +250,6 @@
                 <p>
                 <ul>
                     <li>100개</li>
-                    <li>매달 10개씩 늘리기</li>
-                    <li>1월: 10개</li>
-                    <li>10월: 100개</li>
                 </ul>
                 </p>
             </div>
@@ -257,24 +258,17 @@
                 <p>
                 <ul>
                     <li>50개</li>
-                    <li>매달 10개씩 늘리기</li>
-                    <li>1월: 상체 10개</li>
-                    <li>6월: 전신 10개</li>
-                    <li>10월: 전신 50개</li>
                 </ul>
                 </p>
             </div>
-            <div class="flex-item">
+            <a href="#first-goal2"  class="flex-item">
                 <h4>2 신체건강</h4>
-            </div>
+            </a>
             <div class="flex-item">
                 <h4>5 플랭크</h4>
                 <p>
                 <ul>
                     <li>10분</li>
-                    <li>매달 1분씩 늘리기</li>
-                    <li>1월: 1분</li>
-                    <li>10월: 10분</li>
                 </ul>
                 </p>
             </div>
@@ -283,9 +277,6 @@
                 <p>
                 <ul>
                     <li>100개</li>
-                    <li>매달 10개씩 늘리기</li>
-                    <li>1월: 10개</li>
-                    <li>10월: 100개</li>
                 </ul>
                 </p>
             </div>
@@ -304,8 +295,8 @@
                 <h4>8 시력</h4>
                 <p>
                 <ul>
-                    <li>눈 사우나 : 안구건조증 완화</li>
-                    <li>눈 마사지 : 안압 완화</li>
+                    <li>눈 사우나</li>
+                    <li>눈 마사지</li>
                     <li>시력 교정 훈련</li>
                     <li>눈 영양제</li>
                 </ul>
@@ -315,7 +306,7 @@
         </p>
     </article>
 
-    <article id="competitiveness">
+    <article id="goal4">
         <header>
             <h2>만다라트</h2>
             <h3>2023년 목표 - 자기계발 - 경쟁력</h3>
@@ -334,9 +325,9 @@
             <div class="flex-item">
                 <h4>4 책 출판</h4>
             </div>
-            <div class="flex-item">
+            <a href="#first-goal2" class="flex-item">
                 <h4>4 경쟁력</h4>
-            </div>
+            </a>
             <div class="flex-item">
                 <h4>5 Leet Code</h4>
             </div>
@@ -353,7 +344,7 @@
         </p>
     </article>
 
-    <article id="economy">
+    <article id="goal5">
         <header>
             <h2>만다라트</h2>
             <h3>2023년 목표 - 자기계발 - 경제력</h3>
@@ -372,9 +363,9 @@
             <div class="flex-item">
                 <h4>4 환율 독서</h4>
             </div>
-            <div class="flex-item">
+            <a href="#first-goal5" class="flex-item">
                 <h4>4 경제력</h4>
-            </div>
+            </a>
             <div class="flex-item">
                 <h4>5 부동산 독서</h4>
             </div>
